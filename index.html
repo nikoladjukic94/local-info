@@ -8,9 +8,8 @@
     <title>Local Info</title>
 
     <link rel="stylesheet" href="theme/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="theme/css/lightslider.css">
+    <link rel="stylesheet" href="theme/css/all.min.css">
     <link rel="stylesheet" href="theme/css/main.css">
 
     <link rel="icon" type="image/png" sizes="32x32" href="theme/images/logo.png">
@@ -36,14 +35,16 @@
         </div>
         <div class="container-fluid navbar-fluid">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light">
+                <nav class="navbar navbar-expand-xl navbar-light">
                     <a class="navbar-brand" href="index.html">
-                        <img class="img-fluid" src="theme/images/logo.png" alt="Local Info">
+                        <img class="img-fluid" src="theme/images/logo-big.svg" alt="Local Info">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon">
+                            <i class="fas fa-bars"></i>
+                        </span>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -78,12 +79,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <ul>
+                        <a id="show-cities">Gradovi <i class="fas fa-chevron-down"></i></a>
+                        <ul id="city-list">
                             <li><a href="city.html">Andrijevica</a></li>
                             <li><a href="city.html">Bar</a></li>
                             <li><a href="city.html">Berane</a></li>
                             <li><a href="city.html">Bijelo Polje</a></li>
-                            <li><a href="city.html">Tivat</a></li>
                             <li><a href="city.html">Budva</a></li>
                             <li><a href="city.html">Cetinje</a></li>
                             <li><a href="city.html">Danilovgrad</a></li>
@@ -106,29 +107,35 @@
             <div class="container-fluid">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8 col-12">
+                        <div class="col-lg-8 col-12">
                             <ul id="content-slider" class="content-slider">
                                 <li>
-                                    <img src="theme/images/img1.jpg" alt="City">
-                                    <div class="slider-background"></div>
-                                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, cupiditate!
-                                    </h2>
+                                    <a href="news.html">
+                                        <img src="theme/images/img1.jpg" alt="City">
+                                        <div class="slider-background"></div>
+                                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, cupiditate!
+                                        </h2>
+                                    </a>
                                 </li>
                                 <li>
-                                    <img src="theme/images/img2.jpg" alt="City">
-                                    <div class="slider-background"></div>
-                                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, cupiditate!
-                                    </h2>
+                                    <a href="news.html">
+                                        <img src="theme/images/img2.jpg" alt="City">
+                                        <div class="slider-background"></div>
+                                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, cupiditate!
+                                        </h2>
+                                    </a>
                                 </li>
                                 <li>
-                                    <img src="theme/images/img3.jpg" alt="City">
-                                    <div class="slider-background"></div>
-                                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, cupiditate!
-                                    </h2>
+                                    <a href="news.html">
+                                        <img src="theme/images/img3.jpg" alt="City">
+                                        <div class="slider-background"></div>
+                                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, cupiditate!
+                                        </h2>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-md-4 col-12 banner-top">
+                        <div class="col-lg-4 col-12 banner-top">
                             <img src="theme/images/img2.jpg" alt="Banner">
                             <h2>Baner</h2>
                         </div>
@@ -153,7 +160,7 @@
             <div class="container-fluid recommended-news-fluid">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3 col-6 recomm-news">
+                        <div class="col-lg-3 col-6 recomm-news">
                             <div class="recomm-news-img">
                                 <a href="news.html">
                                     <img src="theme/images/img3.jpg" alt="City">
@@ -166,7 +173,7 @@
                                     Neque dolorum laboriosam sit odit mollitia! </p>
                             </a>
                         </div>
-                        <div class="col-md-3 col-6 recomm-news">
+                        <div class="col-lg-3 col-6 recomm-news">
                             <div class="recomm-news-img">
                                 <a href="news.html">
                                     <img src="theme/images/img1.jpg" alt="City">
@@ -179,7 +186,7 @@
                                     Neque dolorum laboriosam sit odit mollitia! </p>
                             </a>
                         </div>
-                        <div class="col-md-3 col-6 recomm-news">
+                        <div class="col-lg-3 col-6 recomm-news">
                             <div class="recomm-news-img">
                                 <a href="news.html">
                                     <img src="theme/images/img2.jpg" alt="City">
@@ -192,7 +199,7 @@
                                     Neque dolorum laboriosam sit odit mollitia! </p>
                             </a>
                         </div>
-                        <div class="col-md-3 col-6 recomm-news">
+                        <div class="col-lg-3 col-6 recomm-news">
                             <div class="recomm-news-img">
                                 <a href="news.html">
                                     <img src="theme/images/img3.jpg" alt="City">
@@ -219,14 +226,14 @@
                                 <span>Vijesti iz gradova</span>
                             </div>
                         </div>
-                        <div class="col-md-4 col-12">
+                        <div class="col-lg-4 col-12">
                             <div class="news-top-links">
                                 <div class="news-top-links-left">
                                     <a href="#">
-                                        <img src="theme/images/logo.png" alt="Image">
+                                        <i class="fas fa-globe"></i>
                                     </a>
                                 </div>
-                                <div class="news-top-links-middle">
+                                <div class="news-top-links-middle blue">
                                     <a href="city.html">
                                         <span>Berane</span>
                                         <i class="fas fa-arrow-right"></i>
@@ -275,16 +282,189 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-4 col-12">
+                        <div class="col-lg-4 col-12">
                             <div class="news-top-links">
                                 <div class="news-top-links-left">
                                     <a href="#">
-                                        <img src="theme/images/logo.png" alt="Image">
+                                        <i class="fas fa-globe"></i>
                                     </a>
                                 </div>
-                                <div class="news-top-links-middle">
+                                <div class="news-top-links-middle red">
+                                    <a href="city.html">
+                                        <span>Budva</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                                <div class="news-top-links-right">
+                                    <a href="#">
+                                        <i class="fas fa-broadcast-tower"></i>
+                                        <span>RADIO</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news-top">
+
+                                <a href="news.html">
+                                    <img src="theme/images/img2.jpg" alt="News">
+                                    <div class="news-top-background"></div>
+                                    <div class="news-text">
+                                        <span>22.08.2019</span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quod.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="news-bottom news-bottom-left">
+                                <a href="news.html">
+
+                                    <img src="theme/images/img3.jpg" alt="News">
+                                    <div class="news-bottom-background"></div>
+                                    <div class="news-text">
+                                        <span>22.08.2019</span>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="news-bottom news-bottom-right">
+                                <a href="news.html">
+
+                                    <img src="theme/images/img1.jpg" alt="News">
+                                    <div class="news-bottom-background"></div>
+                                    <div class="news-text">
+                                        <span>22.08.2019</span>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <div class="news-top-links">
+                                <div class="news-top-links-left">
+                                    <a href="#">
+                                        <i class="fas fa-globe"></i>
+                                    </a>
+                                </div>
+                                <div class="news-top-links-middle green">
+                                    <a href="city.html">
+                                        <span>Cetinje</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                                <div class="news-top-links-right">
+                                    <a href="#">
+                                        <i class="fas fa-broadcast-tower"></i>
+                                        <span>RADIO</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news-top">
+
+                                <a href="news.html">
+                                    <img src="theme/images/img3.jpg" alt="News">
+                                    <div class="news-top-background"></div>
+                                    <div class="news-text">
+                                        <span>22.08.2019</span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quod.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="news-bottom news-bottom-left">
+                                <a href="news.html">
+
+                                    <img src="theme/images/img1.jpg" alt="News">
+                                    <div class="news-bottom-background"></div>
+                                    <div class="news-text">
+                                        <span>22.08.2019</span>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="news-bottom news-bottom-right">
+                                <a href="news.html">
+
+                                    <img src="theme/images/img2.jpg" alt="News">
+                                    <div class="news-bottom-background"></div>
+                                    <div class="news-text">
+                                        <span>22.08.2019</span>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 banner">
+                            <img src="theme/images/img1.jpg" alt="Banner">
+                            <h1>Baner 1</h1>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <div class="news-top-links">
+                                <div class="news-top-links-left">
+                                    <a href="#">
+                                        <i class="fas fa-globe"></i>
+                                    </a>
+                                </div>
+                                <div class="news-top-links-middle blue">
                                     <a href="city.html">
                                         <span>Berane</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                                <div class="news-top-links-right">
+                                    <a href="#">
+                                        <i class="fas fa-broadcast-tower"></i>
+                                        <span>RADIO</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news-top">
+
+                                <a href="news.html">
+                                    <img src="theme/images/img3.jpg" alt="News">
+                                    <div class="news-top-background"></div>
+                                    <div class="news-text">
+                                        <span>22.08.2019</span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quod.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="news-bottom news-bottom-left">
+                                <a href="news.html">
+
+                                    <img src="theme/images/img2.jpg" alt="News">
+                                    <div class="news-bottom-background"></div>
+                                    <div class="news-text">
+                                        <span>22.08.2019</span>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="news-bottom news-bottom-right">
+                                <a href="news.html">
+
+                                    <img src="theme/images/img1.jpg" alt="News">
+                                    <div class="news-bottom-background"></div>
+                                    <div class="news-text">
+                                        <span>22.08.2019</span>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <div class="news-top-links">
+                                <div class="news-top-links-left">
+                                    <a href="#">
+                                        <i class="fas fa-globe"></i>
+                                    </a>
+                                </div>
+                                <div class="news-top-links-middle red">
+                                    <a href="city.html">
+                                        <span>Budva</span>
                                         <i class="fas fa-arrow-right"></i>
                                     </a>
                                 </div>
@@ -331,16 +511,16 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-4 col-12">
+                        <div class="col-lg-4 col-12">
                             <div class="news-top-links">
                                 <div class="news-top-links-left">
                                     <a href="#">
-                                        <img src="theme/images/logo.png" alt="Image">
+                                        <i class="fas fa-globe"></i>
                                     </a>
                                 </div>
-                                <div class="news-top-links-middle">
+                                <div class="news-top-links-middle green">
                                     <a href="city.html">
-                                        <span>Berane</span>
+                                        <span>Cetinje</span>
                                         <i class="fas fa-arrow-right"></i>
                                     </a>
                                 </div>
@@ -354,7 +534,7 @@
                             <div class="news-top">
 
                                 <a href="news.html">
-                                    <img src="theme/images/img1.jpg" alt="News">
+                                    <img src="theme/images/img2.jpg" alt="News">
                                     <div class="news-top-background"></div>
                                     <div class="news-text">
                                         <span>22.08.2019</span>
@@ -365,7 +545,7 @@
                             <div class="news-bottom news-bottom-left">
                                 <a href="news.html">
 
-                                    <img src="theme/images/img2.jpg" alt="News">
+                                    <img src="theme/images/img1.jpg" alt="News">
                                     <div class="news-bottom-background"></div>
                                     <div class="news-text">
                                         <span>22.08.2019</span>
@@ -389,182 +569,9 @@
                         </div>
 
                         <div class="col-12 banner">
-                            <img src="theme/images/img1.jpg" alt="Banner">
-                            <h1>Baner 1</h1>
+                            <img src="theme/images/img2.jpg" alt="Banner">
+                            <h1>Baner 2</h1>
                         </div>
-                        <div class="col-md-4 col-12">
-                                <div class="news-top-links">
-                                    <div class="news-top-links-left">
-                                        <a href="#">
-                                            <img src="theme/images/logo.png" alt="Image">
-                                        </a>
-                                    </div>
-                                    <div class="news-top-links-middle">
-                                        <a href="city.html">
-                                            <span>Berane</span>
-                                            <i class="fas fa-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                    <div class="news-top-links-right">
-                                        <a href="#">
-                                            <i class="fas fa-broadcast-tower"></i>
-                                            <span>RADIO</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="news-top">
-    
-                                    <a href="news.html">
-                                        <img src="theme/images/img1.jpg" alt="News">
-                                        <div class="news-top-background"></div>
-                                        <div class="news-text">
-                                            <span>22.08.2019</span>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quod.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="news-bottom news-bottom-left">
-                                    <a href="news.html">
-    
-                                        <img src="theme/images/img2.jpg" alt="News">
-                                        <div class="news-bottom-background"></div>
-                                        <div class="news-text">
-                                            <span>22.08.2019</span>
-                                            <p>Lorem ipsum dolor sit amet.</p>
-    
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="news-bottom news-bottom-right">
-                                    <a href="news.html">
-    
-                                        <img src="theme/images/img3.jpg" alt="News">
-                                        <div class="news-bottom-background"></div>
-                                        <div class="news-text">
-                                            <span>22.08.2019</span>
-                                            <p>Lorem ipsum dolor sit amet.</p>
-    
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-12">
-                                <div class="news-top-links">
-                                    <div class="news-top-links-left">
-                                        <a href="#">
-                                            <img src="theme/images/logo.png" alt="Image">
-                                        </a>
-                                    </div>
-                                    <div class="news-top-links-middle">
-                                        <a href="city.html">
-                                            <span>Berane</span>
-                                            <i class="fas fa-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                    <div class="news-top-links-right">
-                                        <a href="#">
-                                            <i class="fas fa-broadcast-tower"></i>
-                                            <span>RADIO</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="news-top">
-    
-                                    <a href="news.html">
-                                        <img src="theme/images/img1.jpg" alt="News">
-                                        <div class="news-top-background"></div>
-                                        <div class="news-text">
-                                            <span>22.08.2019</span>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quod.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="news-bottom news-bottom-left">
-                                    <a href="news.html">
-    
-                                        <img src="theme/images/img2.jpg" alt="News">
-                                        <div class="news-bottom-background"></div>
-                                        <div class="news-text">
-                                            <span>22.08.2019</span>
-                                            <p>Lorem ipsum dolor sit amet.</p>
-    
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="news-bottom news-bottom-right">
-                                    <a href="news.html">
-    
-                                        <img src="theme/images/img3.jpg" alt="News">
-                                        <div class="news-bottom-background"></div>
-                                        <div class="news-text">
-                                            <span>22.08.2019</span>
-                                            <p>Lorem ipsum dolor sit amet.</p>
-    
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-12">
-                                <div class="news-top-links">
-                                    <div class="news-top-links-left">
-                                        <a href="#">
-                                            <img src="theme/images/logo.png" alt="Image">
-                                        </a>
-                                    </div>
-                                    <div class="news-top-links-middle">
-                                        <a href="city.html">
-                                            <span>Berane</span>
-                                            <i class="fas fa-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                    <div class="news-top-links-right">
-                                        <a href="#">
-                                            <i class="fas fa-broadcast-tower"></i>
-                                            <span>RADIO</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="news-top">
-    
-                                    <a href="news.html">
-                                        <img src="theme/images/img1.jpg" alt="News">
-                                        <div class="news-top-background"></div>
-                                        <div class="news-text">
-                                            <span>22.08.2019</span>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quod.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="news-bottom news-bottom-left">
-                                    <a href="news.html">
-    
-                                        <img src="theme/images/img2.jpg" alt="News">
-                                        <div class="news-bottom-background"></div>
-                                        <div class="news-text">
-                                            <span>22.08.2019</span>
-                                            <p>Lorem ipsum dolor sit amet.</p>
-    
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="news-bottom news-bottom-right">
-                                    <a href="news.html">
-    
-                                        <img src="theme/images/img3.jpg" alt="News">
-                                        <div class="news-bottom-background"></div>
-                                        <div class="news-text">
-                                            <span>22.08.2019</span>
-                                            <p>Lorem ipsum dolor sit amet.</p>
-    
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-    
-                            <div class="col-12 banner">
-                                <img src="theme/images/img1.jpg" alt="Banner">
-                                <h1>Baner 2</h1>
-                            </div>
                     </div>
                 </div>
             </div>
@@ -575,7 +582,7 @@
         <div class="container-fluid footer-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 col-12 footer-info">
+                    <div class="col-lg-3 col-12 footer-info">
                         <img src="theme/images/logo-white.png" class="footer-logo" alt="Logo">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ab numquam minima, neque
                             dolore ipsum dolorum ut fugit placeat a exercitationem sint maiores voluptatum cum!
@@ -585,7 +592,7 @@
                         </p>
                         <a href="https://www.osce.org/"><img src="theme/images/osce.svg" alt="OSCE"></a>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-12 footer-cities">
+                    <div class="col-lg-3 col-md-4 col-12 footer-cities">
                         <h5>Gradovi</h5>
                         <table>
                             <tr>
@@ -614,7 +621,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-12 footer-social">
+                    <div class="col-lg-3 col-md-4 col-12 footer-social">
                         <h5>Društvene mreže</h5>
                         <a href="https://www.facebook.com" target="_blank"><i
                                 class="fab fa-facebook-f"></i><span>Facebook</span></a>
@@ -623,7 +630,7 @@
                         <a href="https://www.youtube.com" target="_blank"><i
                                 class="fab fa-youtube"></i><span>Youtube</span></a>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-12 footer-contact">
+                    <div class="col-lg-3 col-md-4 col-12 footer-contact">
                         <h5>Kontakt</h5>
                         <a href="tel:+38220987654" target="_blank">+382 20 987 654</a>
                         <a href="mailto:redakcija@localinfo.me" target="_blank">redakcija@localinfo.me</a>
@@ -644,6 +651,15 @@
                                 <img src="theme/images/amplitudo.svg" alt="Amplitudo">
                             </a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright-small">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <span>&#169; Local Info 2020 - All rights reserved</span>
                     </div>
                 </div>
             </div>

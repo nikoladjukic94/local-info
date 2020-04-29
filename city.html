@@ -8,9 +8,8 @@
     <title>Local Info</title>
 
     <link rel="stylesheet" href="theme/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="theme/css/lightslider.css">
+    <link rel="stylesheet" href="theme/css/all.min.css">
     <link rel="stylesheet" href="theme/css/main.css">
 
     <link rel="icon" type="image/png" sizes="32x32" href="theme/images/logo.png">
@@ -38,18 +37,20 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <a class="navbar-brand" href="index.html">
-                        <img class="img-fluid" src="theme/images/logo.png" alt="Local Info">
+                        <img class="img-fluid" src="theme/images/logo-big.svg" alt="Local Info">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon">
+                            <i class="fas fa-bars"></i>
+                        </span>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item item">
-                                <a class="nav-link" href="index.html">Naslovna</a>
+                                <a class="nav-link active" href="index.html">Naslovna</a>
                             </li>
                             <li class="nav-item item">
                                 <a class="nav-link" href="recommendednews.html">Izdvojene vijesti</a>
@@ -78,12 +79,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <ul>
+                        <a id="show-cities">Gradovi <i class="fas fa-chevron-down"></i></a>
+                        <ul id="city-list">
                             <li><a href="city.html">Andrijevica</a></li>
                             <li><a href="city.html">Bar</a></li>
                             <li><a href="city.html">Berane</a></li>
                             <li><a href="city.html">Bijelo Polje</a></li>
-                            <li><a href="city.html">Tivat</a></li>
                             <li><a href="city.html">Budva</a></li>
                             <li><a href="city.html">Cetinje</a></li>
                             <li><a href="city.html">Danilovgrad</a></li>
@@ -126,7 +127,7 @@
             <div class="container-fluid recommended-news-fluid">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3 col-6 recomm-news">
+                        <div class="col-lg-3 col-md-6 col-6 recomm-news">
                             <div class="recomm-news-img">
                                 <a href="news.html">
                                     <img src="theme/images/img3.jpg" alt="City">
@@ -139,7 +140,7 @@
                                     Neque dolorum laboriosam sit odit mollitia! </p>
                             </a>
                         </div>
-                        <div class="col-md-3 col-6 recomm-news">
+                        <div class="col-lg-3 col-md-6 col-6 recomm-news">
                             <div class="recomm-news-img">
                                 <a href="news.html">
                                     <img src="theme/images/img1.jpg" alt="City">
@@ -152,7 +153,7 @@
                                     Neque dolorum laboriosam sit odit mollitia! </p>
                             </a>
                         </div>
-                        <div class="col-md-3 col-6 recomm-news">
+                        <div class="col-lg-3 col-md-6 col-6 recomm-news">
                             <div class="recomm-news-img">
                                 <a href="news.html">
                                     <img src="theme/images/img2.jpg" alt="City">
@@ -165,7 +166,7 @@
                                     Neque dolorum laboriosam sit odit mollitia! </p>
                             </a>
                         </div>
-                        <div class="col-md-3 col-6 recomm-news">
+                        <div class="col-lg-3 col-md-6 col-6 recomm-news">
                             <div class="recomm-news-img">
                                 <a href="news.html">
                                     <img src="theme/images/img3.jpg" alt="City">
@@ -178,7 +179,7 @@
                                     Neque dolorum laboriosam sit odit mollitia! </p>
                             </a>
                         </div>
-                        <div class="col-md-3 col-6 recomm-news">
+                        <div class="col-lg-3 col-md-6 col-6 recomm-news">
                             <div class="recomm-news-img">
                                 <a href="news.html">
                                     <img src="theme/images/img3.jpg" alt="City">
@@ -191,7 +192,7 @@
                                     Neque dolorum laboriosam sit odit mollitia! </p>
                             </a>
                         </div>
-                        <div class="col-md-3 col-6 recomm-news">
+                        <div class="col-lg-3 col-md-6 col-6 recomm-news">
                             <div class="recomm-news-img">
                                 <a href="news.html">
                                     <img src="theme/images/img1.jpg" alt="City">
@@ -204,7 +205,7 @@
                                     Neque dolorum laboriosam sit odit mollitia! </p>
                             </a>
                         </div>
-                        <div class="col-md-3 col-6 recomm-news">
+                        <div class="col-lg-3 col-md-6 col-6 recomm-news">
                             <div class="recomm-news-img">
                                 <a href="news.html">
                                     <img src="theme/images/img2.jpg" alt="City">
@@ -217,7 +218,7 @@
                                     Neque dolorum laboriosam sit odit mollitia! </p>
                             </a>
                         </div>
-                        <div class="col-md-3 col-6 recomm-news">
+                        <div class="col-lg-3 col-md-6 col-6 recomm-news">
                             <div class="recomm-news-img">
                                 <a href="news.html">
                                     <img src="theme/images/img3.jpg" alt="City">
@@ -230,7 +231,7 @@
                                     Neque dolorum laboriosam sit odit mollitia! </p>
                             </a>
                         </div>
-                        <div class="col-md-3 col-6 recomm-news">
+                        <div class="col-lg-3 col-md-6 col-6 recomm-news">
                             <div class="recomm-news-img">
                                 <a href="news.html">
                                     <img src="theme/images/img3.jpg" alt="City">
@@ -243,7 +244,7 @@
                                     Neque dolorum laboriosam sit odit mollitia! </p>
                             </a>
                         </div>
-                        <div class="col-md-3 col-6 recomm-news">
+                        <div class="col-lg-3 col-md-6 col-6 recomm-news">
                             <div class="recomm-news-img">
                                 <a href="news.html">
                                     <img src="theme/images/img1.jpg" alt="City">
@@ -256,7 +257,7 @@
                                     Neque dolorum laboriosam sit odit mollitia! </p>
                             </a>
                         </div>
-                        <div class="col-md-3 col-6 recomm-news">
+                        <div class="col-lg-3 col-md-6 col-6 recomm-news">
                             <div class="recomm-news-img">
                                 <a href="news.html">
                                     <img src="theme/images/img2.jpg" alt="City">
@@ -269,7 +270,7 @@
                                     Neque dolorum laboriosam sit odit mollitia! </p>
                             </a>
                         </div>
-                        <div class="col-md-3 col-6 recomm-news">
+                        <div class="col-lg-3 col-md-6 col-6 recomm-news">
                             <div class="recomm-news-img">
                                 <a href="news.html">
                                     <img src="theme/images/img3.jpg" alt="City">
@@ -292,7 +293,7 @@
         <div class="container-fluid footer-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 col-12 footer-info">
+                    <div class="col-lg-3 col-12 footer-info">
                         <img src="theme/images/logo-white.png" class="footer-logo" alt="Logo">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ab numquam minima, neque
                             dolore ipsum dolorum ut fugit placeat a exercitationem sint maiores voluptatum cum!
@@ -302,7 +303,7 @@
                         </p>
                         <a href="https://www.osce.org/"><img src="theme/images/osce.svg" alt="OSCE"></a>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-12 footer-cities">
+                    <div class="col-lg-3 col-md-4 col-12 footer-cities">
                         <h5>Gradovi</h5>
                         <table>
                             <tr>
@@ -331,7 +332,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-12 footer-social">
+                    <div class="col-lg-3 col-md-4 col-12 footer-social">
                         <h5>Društvene mreže</h5>
                         <a href="https://www.facebook.com" target="_blank"><i
                                 class="fab fa-facebook-f"></i><span>Facebook</span></a>
@@ -340,7 +341,7 @@
                         <a href="https://www.youtube.com" target="_blank"><i
                                 class="fab fa-youtube"></i><span>Youtube</span></a>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-12 footer-contact">
+                    <div class="col-lg-3 col-md-4 col-12 footer-contact">
                         <h5>Kontakt</h5>
                         <a href="tel:+38220987654" target="_blank">+382 20 987 654</a>
                         <a href="mailto:redakcija@localinfo.me" target="_blank">redakcija@localinfo.me</a>
@@ -361,6 +362,15 @@
                                 <img src="theme/images/amplitudo.svg" alt="Amplitudo">
                             </a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright-small">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <span>&#169; Local Info 2020 - All rights reserved</span>
                     </div>
                 </div>
             </div>
