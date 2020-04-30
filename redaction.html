@@ -8,9 +8,8 @@
     <title>Local Info</title>
 
     <link rel="stylesheet" href="theme/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="theme/css/lightslider.css">
+    <link rel="stylesheet" href="theme/css/all.min.css">
     <link rel="stylesheet" href="theme/css/main.css">
 
     <link rel="icon" type="image/png" sizes="32x32" href="theme/images/logo.png">
@@ -38,12 +37,14 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <a class="navbar-brand" href="index.html">
-                        <img class="img-fluid" src="theme/images/logo.png" alt="Local Info">
+                        <img class="img-fluid" src="theme/images/logo-big.svg" alt="Local Info">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon">
+                            <i class="fas fa-bars"></i>
+                        </span>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -78,12 +79,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <ul>
+                        <a id="show-cities">Gradovi <i class="fas fa-chevron-down"></i></a>
+                        <ul id="city-list">
                             <li><a href="city.html">Andrijevica</a></li>
                             <li><a href="city.html">Bar</a></li>
                             <li><a href="city.html">Berane</a></li>
                             <li><a href="city.html">Bijelo Polje</a></li>
-                            <li><a href="city.html">Tivat</a></li>
                             <li><a href="city.html">Budva</a></li>
                             <li><a href="city.html">Cetinje</a></li>
                             <li><a href="city.html">Danilovgrad</a></li>
@@ -108,42 +109,78 @@
                         <div class="col-xl-3 col-lg-4 col-sm-6 col-12 redaction-user">
                             <span><i class="fas fa-user"></i>Marko Markovic</span>
                             <a href="tel:+38268987456"><i class="fas fa-phone"></i><span>+382 68 987 456</span></a>
-                            <a href="mailto:markomarkovic@localinfo.me"><i class="fas fa-envelope"></i><span>markomarkovic@localinfo.me</span></a>
+                            <a href="mailto:markomarkovic@localinfo.me"><i
+                                    class="fas fa-envelope"></i><span>markomarkovic@localinfo.me</span></a>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 redaction-user">
+                            <span><i class="fas fa-user"></i>Ivan Ivanovic</span>
+                            <a href="tel:+38268123456"><i class="fas fa-phone"></i><span>+382 68 123 456</span></a>
+                            <a href="mailto:ivanivanovic@localinfo.me"><i
+                                    class="fas fa-envelope"></i><span>ivanivanovic@localinfo.me</span></a>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 redaction-user">
+                            <span><i class="fas fa-user"></i>Petar Petrovic</span>
+                            <a href="tel:+38268987123"><i class="fas fa-phone"></i><span>+382 68 987 123</span></a>
+                            <a href="mailto:petarpetrovic@localinfo.me"><i
+                                    class="fas fa-envelope"></i><span>petarpetrovic@localinfo.me</span></a>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 redaction-user">
+                            <span><i class="fas fa-user"></i>Jovan Jovanovic</span>
+                            <a href="tel:+38268321852"><i class="fas fa-phone"></i><span>+382 68 321 852</span></a>
+                            <a href="mailto:jovanjovanovic@localinfo.me"><i
+                                    class="fas fa-envelope"></i><span>jovanjovanovic@localinfo.me</span></a>
                         </div>
                         <div class="col-xl-3 col-lg-4 col-sm-6 col-12 redaction-user">
                             <span><i class="fas fa-user"></i>Marko Markovic</span>
                             <a href="tel:+38268987456"><i class="fas fa-phone"></i><span>+382 68 987 456</span></a>
-                            <a href="mailto:markomarkovic@localinfo.me"><i class="fas fa-envelope"></i><span>markomarkovic@localinfo.me</span></a>
+                            <a href="mailto:markomarkovic@localinfo.me"><i
+                                    class="fas fa-envelope"></i><span>markomarkovic@localinfo.me</span></a>
                         </div>
                         <div class="col-xl-3 col-lg-4 col-sm-6 col-12 redaction-user">
-                            <span><i class="fas fa-user"></i>Marko Markovic</span>
-                            <a href="tel:+38268987456"><i class="fas fa-phone"></i><span>+382 68 987 456</span></a>
-                            <a href="mailto:markomarkovic@localinfo.me"><i class="fas fa-envelope"></i><span>markomarkovic@localinfo.me</span></a>
+                            <span><i class="fas fa-user"></i>Ivan Ivanovic</span>
+                            <a href="tel:+38268123456"><i class="fas fa-phone"></i><span>+382 68 123 456</span></a>
+                            <a href="mailto:ivanivanovic@localinfo.me"><i
+                                    class="fas fa-envelope"></i><span>ivanivanovic@localinfo.me</span></a>
                         </div>
                         <div class="col-xl-3 col-lg-4 col-sm-6 col-12 redaction-user">
-                            <span><i class="fas fa-user"></i>Marko Markovic</span>
-                            <a href="tel:+38268987456"><i class="fas fa-phone"></i><span>+382 68 987 456</span></a>
-                            <a href="mailto:markomarkovic@localinfo.me"><i class="fas fa-envelope"></i><span>markomarkovic@localinfo.me</span></a>
+                            <span><i class="fas fa-user"></i>Petar Petrovic</span>
+                            <a href="tel:+38268987123"><i class="fas fa-phone"></i><span>+382 68 987 123</span></a>
+                            <a href="mailto:petarpetrovic@localinfo.me"><i
+                                    class="fas fa-envelope"></i><span>petarpetrovic@localinfo.me</span></a>
                         </div>
                         <div class="col-xl-3 col-lg-4 col-sm-6 col-12 redaction-user">
-                            <span><i class="fas fa-user"></i>Marko Markovic</span>
-                            <a href="tel:+38268987456"><i class="fas fa-phone"></i><span>+382 68 987 456</span></a>
-                            <a href="mailto:markomarkovic@localinfo.me"><i class="fas fa-envelope"></i><span>markomarkovic@localinfo.me</span></a>
+                            <span><i class="fas fa-user"></i>Jovan Jovanovic</span>
+                            <a href="tel:+38268321852"><i class="fas fa-phone"></i><span>+382 68 321 852</span></a>
+                            <a href="mailto:jovanjovanovic@localinfo.me"><i
+                                    class="fas fa-envelope"></i><span>jovanjovanovic@localinfo.me</span></a>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 redaction-user">
-                            <span><i class="fas fa-user"></i>Marko Markovic</span>
-                            <a href="tel:+38268987456"><i class="fas fa-phone"></i><span>+382 68 987 456</span></a>
-                            <a href="mailto:markomarkovic@localinfo.me"><i class="fas fa-envelope"></i><span>markomarkovic@localinfo.me</span></a>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 redaction-user">
-                            <span><i class="fas fa-user"></i>Marko Markovic</span>
-                            <a href="tel:+38268987456"><i class="fas fa-phone"></i><span>+382 68 987 456</span></a>
-                            <a href="mailto:markomarkovic@localinfo.me"><i class="fas fa-envelope"></i><span>markomarkovic@localinfo.me</span></a>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12 redaction-user">
-                            <span><i class="fas fa-user"></i>Marko Markovic</span>
-                            <a href="tel:+38268987456"><i class="fas fa-phone"></i><span>+382 68 987 456</span></a>
-                            <a href="mailto:markomarkovic@localinfo.me"><i class="fas fa-envelope"></i><span>markomarkovic@localinfo.me</span></a>
+                    </div>
+                    <div class="row redaction-form">
+                        <div class="col-12">
+                            <form action="#" method="GET" novalidate>
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-6 col-12 form-field">
+                                        <label for="fname">Ime i prezime:</label>
+                                        <input type="text" id="fname" name="fname" placeholder="Petar Petrovic"
+                                            required>
+                                        <p id="mname"></p>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 col-12 form-field">
+                                        <label for="fphone">Telefon:</label>
+                                        <input type="tel" name="fphone" id="fphone" placeholder="+38268741236" required>
+                                        <p id="mphone"></p>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 col-12 form-field">
+                                        <label for="femail">Email:</label>
+                                        <input type="email" name="femail" id="femail" placeholder="primjer@mail.com"
+                                            required>
+                                        <p id="memail"></p>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 col-12 form-field">
+                                        <input type="submit" onclick="return formValidation()" value="Pošalji">
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -155,7 +192,7 @@
         <div class="container-fluid footer-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 col-12 footer-info">
+                    <div class="col-lg-3 col-12 footer-info">
                         <img src="theme/images/logo-white.png" class="footer-logo" alt="Logo">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ab numquam minima, neque
                             dolore ipsum dolorum ut fugit placeat a exercitationem sint maiores voluptatum cum!
@@ -165,7 +202,7 @@
                         </p>
                         <a href="https://www.osce.org/"><img src="theme/images/osce.svg" alt="OSCE"></a>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-12 footer-cities">
+                    <div class="col-lg-3 col-md-4 col-12 footer-cities">
                         <h5>Gradovi</h5>
                         <table>
                             <tr>
@@ -194,7 +231,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-12 footer-social">
+                    <div class="col-lg-3 col-md-4 col-12 footer-social">
                         <h5>Društvene mreže</h5>
                         <a href="https://www.facebook.com" target="_blank"><i
                                 class="fab fa-facebook-f"></i><span>Facebook</span></a>
@@ -203,7 +240,7 @@
                         <a href="https://www.youtube.com" target="_blank"><i
                                 class="fab fa-youtube"></i><span>Youtube</span></a>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-12 footer-contact">
+                    <div class="col-lg-3 col-md-4 col-12 footer-contact">
                         <h5>Kontakt</h5>
                         <a href="tel:+38220987654" target="_blank">+382 20 987 654</a>
                         <a href="mailto:redakcija@localinfo.me" target="_blank">redakcija@localinfo.me</a>
@@ -228,12 +265,20 @@
                 </div>
             </div>
         </div>
+        <div class="container-fluid copyright-small">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <span>&#169; Local Info 2020 - All rights reserved</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="theme/js/jquery.min.js"></script>
     <script src="theme/js/bootstrap.min.js"></script>
     <script src="theme/js/main.js"></script>
-
 </body>
 
 </html>
