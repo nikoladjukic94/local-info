@@ -248,6 +248,7 @@ nav .nav-link.active, .nav-link:hover {
     font-family: MuseoSans;
     color: #ffffff;
 }
+
 .section-news .recomm-news-top {
     margin-bottom: 2rem;
 }
@@ -261,6 +262,7 @@ nav .nav-link.active, .nav-link:hover {
     z-index: 99;
     padding: 0 1rem;
 }
+
 .section-news .news-top-links-left {
     background: #ffffff;
     width: 2.5rem;
@@ -269,14 +271,17 @@ nav .nav-link.active, .nav-link:hover {
     position: relative;
     top: -0.6rem;
 }
+
 .section-news .news-top-links-left a {
     position: relative;
     margin-top: -1.5rem;
 }
+
 .section-news .news-top-links-left i {
     color: #1157b5;
     padding: 0.8rem;
 }
+
 .section-news .news-top-links-left:hover {
     cursor: pointer;
     -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
@@ -309,11 +314,13 @@ nav .nav-link.active, .nav-link:hover {
     right: 1rem;
     margin-top: 0.2rem;
 }
+
 .section-news .news-top-links-right {
     position: relative;
     margin-top: -0.2rem;
 }
-.section-news .news-top-links-right a{
+
+.section-news .news-top-links-right a {
     font-size: 0.6rem;
     background: #ffffff;
     border-radius: 1rem;
@@ -554,6 +561,46 @@ footer {
     color: #2972d6;
 }
 
+.redaction-form {
+    font-size: 1rem;
+}
+
+.redaction-form label {
+    color: #9d9d9d;
+    /* width: 7rem; */
+    display: block;
+}
+
+.redaction-form input {
+    border-color: #2972d6;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    color: #2972d6;
+    width: 100%;
+}
+
+.redaction-form input::placeholder {
+    color: #9d9d9d;
+    opacity: 0.8;
+}
+
+.redaction-form p {
+    color: #ff0000;
+}
+
+.redaction-form input[type="submit"] {
+    background-color: #2972d6;
+    color: #ffffff;
+    padding: 0.3rem 3rem;
+    margin-top: 2rem;
+}
+
+.redaction-form input[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #2972d6;
+    border-color: #2972d6;
+}
+
 /* ABOUT US PAGE */
 
 .about-us-section {
@@ -636,6 +683,7 @@ footer {
     color: #1157b5;
     background: transparent;
 }
+
 .news-pagination .chevron-item .page-link {
     color: #ffffff;
     background: #1157b5;
@@ -643,9 +691,11 @@ footer {
     border-radius: 0;
     margin-top: 0.2rem;
 }
-.news-pagination .chevron-item.disabled .page-link{
+
+.news-pagination .chevron-item.disabled .page-link {
     background: #8b8b8b;
 }
+
 .news-pagination .chevron-item .page-link:hover {
     color: #ffffff;
 }
@@ -743,12 +793,15 @@ footer {
 #show-cities {
     display: none;
 }
+
 .blue a {
     background-color: #1157b5;
 }
-.red a{
+
+.red a {
     background-color: red;
 }
+
 .green a {
     background-color: green;
 }
@@ -853,6 +906,10 @@ footer {
     }
     .redaction-user:nth-last-child(-n+2) {
         border-bottom: 0;
+    }
+    .redaction-form .form-field {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 
@@ -1081,7 +1138,6 @@ footer {
     .footer-top {
         padding: 1.5rem 1rem;
     }
-
     .news-bottom-left {
         margin-right: 0.20rem;
     }
